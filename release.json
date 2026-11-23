@@ -1,0 +1,205 @@
+{
+  "product": "In-House GTM",
+  "latest": "1.1.0",
+  "date": "2026-11-23",
+  "dataVersion": 1,
+  "file": {
+    "name": "in-house-gtm-1.1.0.html",
+    "driveId": "1qQTzzlppj65vUzQoVPMZ5rAqd9yURMRl",
+    "downloadUrl": "https://drive.google.com/uc?export=download&id=1qQTzzlppj65vUzQoVPMZ5rAqd9yURMRl",
+    "sha256": "020dd2b68e46913c8109bb564557bc819c6aeb3d091b8616f1d41ca919bc4376",
+    "bytes": 597626
+  },
+  "notes": [
+    "Forms: build a sign-up or enquiry form and copy the code onto your website. Everyone who fills it in becomes a contact, with a note of their answers and an optional follow-up task.",
+    "Submissions land in a Google Sheet you own (about 5 minutes to set up). The CRM pulls them in when you open it, every 15 minutes while it's open, or when you click Sync now.",
+    "Existing contacts are matched by email and only empty fields are filled. Each form can set tags, owner, status, lead source and an optional sequence."
+  ],
+  "capabilitiesChanged": false,
+  "capabilities": {
+    "assets": {},
+    "db": {
+      "rules": [
+        {
+          "path": "config",
+          "read": "view",
+          "write": "admin"
+        },
+        {
+          "path": "calls",
+          "read": "admin",
+          "write": "admin"
+        },
+        {
+          "path": "calls/{self}",
+          "read": "interact",
+          "write": "interact"
+        }
+      ]
+    },
+    "downloads": {},
+    "mcp": {
+      "servers": [
+        {
+          "server": "Gmail",
+          "tools": [
+            "search_threads",
+            "send_message",
+            "create_draft"
+          ]
+        },
+        {
+          "server": "Google Calendar",
+          "tools": [
+            "list_events"
+          ]
+        },
+        {
+          "server": "Google Drive",
+          "tools": [
+            "search_files",
+            "read_file_content"
+          ]
+        },
+        {
+          "server": "Zoom for Claude",
+          "tools": [
+            "search_meetings",
+            "recordings_list",
+            "get_meeting_assets",
+            "get_recording_resource"
+          ]
+        },
+        {
+          "server": "Slack",
+          "tools": [
+            "slack_search_channels",
+            "slack_send_message"
+          ]
+        },
+        {
+          "server": "HubSpot",
+          "tools": [
+            "search_crm_objects",
+            "get_crm_objects",
+            "get_properties"
+          ]
+        }
+      ]
+    },
+    "sample": {},
+    "user": {}
+  },
+  "scheduledTasks": [],
+  "skills": [],
+  "previous": [
+    {
+      "name": "in-house-gtm-1.0.0.html",
+      "driveId": "1-CK1Zmvib5b5NDjUxl-75JxnnEcXmSGQ",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1-CK1Zmvib5b5NDjUxl-75JxnnEcXmSGQ",
+      "sha256": "0862ad839197f9d47a8f8df561d7a4b8a06e7e0e422adf09ca889618f38abef9",
+      "bytes": 546516,
+      "version": "1.0.0"
+    }
+  ],
+  "changelog": [
+    {
+      "v": "1.1.0",
+      "date": "2026-11-23",
+      "notes": [
+        "Forms: build a sign-up or enquiry form and copy the code onto your website. Everyone who fills it in becomes a contact, with a note of their answers and an optional follow-up task.",
+        "Submissions land in a Google Sheet you own (about 5 minutes to set up). The CRM pulls them in when you open it, every 15 minutes while it's open, or when you click Sync now.",
+        "Existing contacts are matched by email and only empty fields are filled. Each form can set tags, owner, status, lead source and an optional sequence."
+      ]
+    },
+    {
+      "v": "1.0.0",
+      "date": "2026-11-23",
+      "notes": [
+        "Version numbers: the version now shows at the bottom of the menu and in Settings > Updates.",
+        "Safe updates: new versions install at the same link, so every record, setting and connection is kept.",
+        "Update notice: editors see a banner when a new version is available, with what's new and how to update.",
+        "Automatic data upgrades: when a version needs data changed, the app does it the first time an editor opens it.",
+        "Full backups now record which version they came from."
+      ]
+    },
+    {
+      "v": "0.9.0",
+      "date": "2026-11-23",
+      "notes": [
+        "Renamed to In-House GTM throughout.",
+        "Assistant: chat with your CRM from the menu, or the Ask button on any page and record. Answers link to records, and any change it suggests waits for your Confirm. Chats are private to each person.",
+        "Enrich: a research table for companies or people with AI columns, such as what they sell, ICP fit, pain points and opening line. Results can be pushed to records, sequences or ABM plans.",
+        "Get started can be hidden, for the whole team by editors or just for yourself, and brought back in Settings."
+      ]
+    },
+    {
+      "v": "0.8.0",
+      "date": "2026-11-23",
+      "notes": [
+        "Automatic sequence sending: editors can turn it on per sequence after a warning and a second confirmation. Due emails send on weekday mornings from a scheduled task.",
+        "Editing a sequence's steps pauses automatic sending until it is turned on again."
+      ]
+    },
+    {
+      "v": "0.7.0",
+      "date": "2026-11-20",
+      "notes": [
+        "ABM Planner: an account plan per target company, with the buying committee, buying process, deal log, plays and a suggested next move.",
+        "ABM sections on company and deal records. Sample data includes two example plans."
+      ]
+    },
+    {
+      "v": "0.6.0",
+      "date": "2026-11-20",
+      "notes": [
+        "Today: a daily brief, now the first page you see.",
+        "Reports: forecast and weekly snapshot, with an optional weekly post to Slack.",
+        "Sequences: multi-step email outreach through Gmail, with drafting help from Claude.",
+        "Fix: Draft with Claude in Sequences now works."
+      ]
+    },
+    {
+      "v": "0.5.0",
+      "date": "2026-11-20",
+      "notes": [
+        "Refreshed look across the app.",
+        "Renamed to Groundwork."
+      ]
+    },
+    {
+      "v": "0.4.0",
+      "date": "2026-11-20",
+      "notes": [
+        "Call Review: Claude reviews sales calls against a coaching scorecard you can edit. Reps see their own calls and managers see all.",
+        "Connect Zoom or Google Meet first, with upload as a fallback.",
+        "Call notes added to deals automatically.",
+        "Automations page and step-by-step connector setup for Gmail, Calendar, Drive, Zoom, Slack and HubSpot."
+      ]
+    },
+    {
+      "v": "0.3.0",
+      "date": "2026-11-20",
+      "notes": [
+        "Get started: a setup guide with 8 plain-language steps that tick themselves off as you go."
+      ]
+    },
+    {
+      "v": "0.2.0",
+      "date": "2026-11-20",
+      "notes": [
+        "Dashboard banner: upload your own image and message, or use a pattern drawn from your business name."
+      ]
+    },
+    {
+      "v": "0.1.0",
+      "date": "2026-11-20",
+      "notes": [
+        "First version: dashboard, a drag-and-drop deals board and list, contacts, companies, tasks and an activity log on every record.",
+        "Settings for branding, currency, pipeline stages, team lists and custom fields, so each business can make it their own.",
+        "CSV import and export, full backup, and sample data you can load and remove.",
+        "Records save to the CRM's own database and are shared with everyone who has access."
+      ]
+    }
+  ]
+}
